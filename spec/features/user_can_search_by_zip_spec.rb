@@ -15,7 +15,7 @@ describe 'as a user' do
     save_and_open_page
     fill_in "q", with: "80203"
     click_on "Locate"
-    expect(cuurent_path).to eq "/search"
+    expect(current_path).to eq "/search"
     expect(page).to have_content "10 results"
     expect(page).to have_css(".station", count: 10)
 
