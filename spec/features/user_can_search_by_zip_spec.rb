@@ -18,6 +18,6 @@ describe 'as a user' do
     expect(current_path).to eq "/search"
     expect(page).to have_content "10 results"
     expect(page).to have_css(".station", count: 10)
-
+    
   end
 end
