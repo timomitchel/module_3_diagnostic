@@ -1,0 +1,10 @@
+<h2><%= @search.members.count%> results</h2>
+
+<% @search.stations.each do |station|  %>
+  <div class="station">
+    <span class="name"><%=station.name%></span>
+    <span class="role"><%=station.role%></span>
+    <span class="party"><%=station.party%></span>
+    <span class="district"><%=station.district%></span>
+  </div>
+<% end %>
