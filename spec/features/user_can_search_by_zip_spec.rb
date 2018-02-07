@@ -18,6 +18,10 @@ describe 'as a user' do
     expect(current_path).to eq "/search"
     expect(page).to have_content "10 results"
     expect(page).to have_css(".station", count: 10)
-    
+    expect(page).to have_css(".name", count: 10)
+    expect(page).to have_css(".address", count: 10)
+    expect(page).to have_css(".fuel_type", count: 10)
+    expect(page).to have_css(".distance", count: 10)
+    expect(page).to have_css(".access_times", count: 10)
   end
 end
