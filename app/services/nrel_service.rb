@@ -7,6 +7,7 @@ class NrelService
   def stations
     @search = JSON.parse(faraday_call.body, symbolize_names: true)[:fuel_stations]
   end
+  
   private
   
   attr_reader :zip
