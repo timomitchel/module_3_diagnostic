@@ -5,6 +5,7 @@
     <span class="name">Name:<%=station[:station_name]%></span>
     <span class="address">Address:<%=station[:street_address]%></span>
     <span class="fuel_type">Fuel Type: <%=station[:fuel_type_code]%></span>
+    <span class="distance"> Distance: <%=station[:distance].round(2)%> miles </span>
     <span class="access_times">Access Times: <%=station[:access_days_time]%></span>
   </div>
 <% end %>
